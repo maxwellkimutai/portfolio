@@ -1,0 +1,210 @@
+body,html{
+    padding: 0;
+    height: 100%;
+}
+.container{
+    width: 90% !important;
+}
+.header {
+    background: url('../images/header-img.jpg') no-repeat center center;
+    background-size: cover;
+    margin-top: 0px;
+    margin: 0;
+    height: auto;
+}
+.overlay {
+    width: 100%;
+    height: 660px;;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.brand-logo{
+    font-family:'Bungee' ;
+    font-size: 20px !important;
+}
+.nav-transparent{
+    background: transparent !important;
+    box-shadow: none;
+}
+.header-text{
+    position: relative;
+    color: white;
+    top: 30%;
+}
+.solid-nav{
+    background: url('../images/header-img.jpg') no-repeat bottom center;
+    background-size: cover;
+}
+.nav-overlay{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.about{
+    margin: 0;
+    background: #f05f40;
+    width: 100%;
+    color: black;
+    color: #fff;
+    font-size: 18px;
+    height:100vh;
+}
+.abt-row,.about-img {
+    height: inherit;
+}
+.about-img {
+    padding: 0 !important;
+}
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+.abt{
+    display: table;
+    height: inherit;
+    text-align: center;
+}
+.abt-text{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.skills{
+    margin: 0;
+    background: #f05f40;
+    width: 100%;
+    color: black;
+    padding: 2rem 0;
+    color: #fff;
+    font-size: 18px;
+}
+.hr-white{
+    width: 8%;
+    border: 1.5px solid #fff;
+}
+.hr-red{
+    width: 8%;
+    border: 1.5px solid #f05f40;
+}
+.projects{
+    padding: 2rem 0;
+    margin: 0 !important;
+}
+.projects-row{
+    padding: 0 !important;
+}
+.project-text {
+    padding: 0 30px !important;
+}
+.project-image {
+    display: block;
+}
+.project-overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+.project-img:hover .project-overlay {
+  bottom: 0;
+  height: 100%;
+}
+.project-buttons {
+    position: relative;
+    top: 50%;
+}
+.project-buttons a{
+    background-color: #f05f40;
+}
+.skills-icons{
+    width: 70% !important;
+}
+i,a{
+    color: #f05f40;
+}
+.muzieknootjes {
+  color: white;
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  min-width: 300px;
+  height: 200px;
+  border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.noot-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width : 1024px) {
+  .project-img {
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  .project-text {
+    -webkit-order: 2;
+    order: 2;
+  }
+  .brand-logo{
+      font-family:'Bungee' ;
+      font-size: 15px !important;
+  }
+}
