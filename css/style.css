@@ -1,6 +1,7 @@
 body,html{
     padding: 0;
     height: 100%;
+    font-family: 'Open Sans';
 }
 .container{
     width: 90% !important;
@@ -46,7 +47,7 @@ body,html{
     width: 100%;
     color: black;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     height:100vh;
 }
 .abt-row,.about-img {
@@ -94,7 +95,7 @@ body,html{
     margin: 0 !important;
 }
 .projects-row{
-    padding: 0 !important;
+    padding: 25px 0 !important;
 }
 .project-text {
     padding: 0 30px !important;
@@ -125,7 +126,7 @@ body,html{
     background-color: #f05f40;
 }
 .skills-icons{
-    width: 70% !important;
+    width: 90% !important;
 }
 i,a{
     color: #f05f40;
@@ -174,6 +175,9 @@ i,a{
   left: 90%;
   animation-delay: 2s;
 }
+h2,h4{
+    font-family: 'Lato';
+}
 
 @keyframes notes {
   0% {
@@ -196,7 +200,7 @@ i,a{
 
 @media only screen and (max-width : 1024px) {
   .brand-logo{
-      font-family:'Bungee' ;
+      font-family:'Museo' ;
       font-size: 15px !important;
   }
 }
