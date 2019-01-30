@@ -200,7 +200,7 @@ h2,h4{
 
 @media only screen and (max-width : 1024px) {
   .brand-logo{
-      font-family:'Museo' ;
+      font-family:'Bungee' !important ;
       font-size: 15px !important;
   }
 }
